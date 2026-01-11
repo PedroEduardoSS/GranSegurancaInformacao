@@ -64,10 +64,10 @@ Este laboratório foi configurado com boas práticas:
 ## 🛑 Encerrando o Ambiente
 
 Para parar o laboratório mas manter os arquivos e o container:
-`docker-compose stop`
+`docker stop kali_lab`
 
 Para remover o container completamente (os arquivos na pasta /data não serão excluídos):
 `docker-compose down`
 
 Para iniciar o ambiente novamente, se já tiver sido criado anteriormente com :
-`docker-compose start`
+`docker start kali_lab`
