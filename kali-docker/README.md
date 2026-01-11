@@ -1,10 +1,8 @@
 # 🧪 Kali Linux Docker Lab (GUI & Secure)
 
-Este projeto configura um ambiente de Kali linux isolado, seguro e persistente utilizando Docker Compose. Ele inclui uma interface gráfica (XFCE) acessível via navegador e um usuário não-root para aumentar a segurança.
+Este projeto configura um ambiente de Kali linux simplificado.
 
 ## 🚀 Funcionalidades
-
-Interface Gráfica (GUI): Acesso via NoVNC no navegador (porta 6080).
 
 Persistência de Dados: Pasta ./data sincronizada com o container.
 
@@ -35,14 +33,8 @@ kali-lab/
 1. Construir e subir o ambiente:
 `docker-compose up -d --build`
 
-2. Acessar a Interface Gráfica: Abra seu navegador e vá para:
-
-    URL: http://localhost:6080/vnc.html
-
-    Senha: password
-
-3. Acessar via Terminal (Linha de Comando):
-`docker exec -it kali_gui_lab /bin/bash`
+2. Acessar via Terminal (Linha de Comando):
+`docker exec -it kali_lab /bin/bash`
 
 ## 🛠️ Comandos Úteis dentro do Kali
 

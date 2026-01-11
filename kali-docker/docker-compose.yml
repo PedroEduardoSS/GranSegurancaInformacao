@@ -1,31 +1,32 @@
 version: '3.8'
 
 services:
-  kali-gui:
+  kali:
     build: .
-    container_name: kali_gui_lab
-    ports:
-      - "6080:6080"  # Acesso Web (NoVNC)
-    environment:
-      - USER=kali-user
-    shm_size: "512mb" # Importante para navegadores dentro do Kali não travarem
+    container_name: kali_lab
+    tty: true           # Permite interação com o terminal
+    stdin_open: true    # Mantém o terminal aberto
+    restart: always
     
-    # Segurança e Recursos
-    deploy:
-      resources:
-        limits:
-          cpus: '2.0'
-          memory: 4G
-    
+    # Segurança: Limita os privilégios do container
     cap_drop:
       - ALL
     cap_add:
-      - NET_RAW
-      - NET_ADMIN
+      - NET_RAW          # Necessário para ferramentas de rede (ex: nmap)
+      - NET_ADMIN        # Necessário para manipular interfaces de rede
+    
+    # Limitação de Recursos (Segurança de Disponibilidade)
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 2G
 
+    # Volumes para persistência de dados
     volumes:
       - ./data:/home/kali-user/work
     
+    # Rede isolada
     networks:
       - kali_internal
 
