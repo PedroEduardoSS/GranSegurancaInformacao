@@ -57,7 +57,7 @@ Este laboratório foi configurado com boas práticas:
 
 - Capacidades: O container não tem acesso total ao hardware (apenas NET_RAW e NET_ADMIN para ferramentas de rede).
 
-- Recursos: Limitado a 2 CPUs e 4GB de RAM para não travar o computador hospedeiro.
+- Recursos: Limitado a 1 CPU e 2GB de RAM para não travar o computador hospedeiro.
 
 - Isolamento: Rede bridge dedicada (kali_internal).
 
