@@ -1,4 +1,4 @@
-# 🧪 Kali Linux Docker Lab (GUI & Secure)
+# 🧪 Kali Linux Docker Lab
 
 Este projeto configura um ambiente de Kali linux simplificado.
 
