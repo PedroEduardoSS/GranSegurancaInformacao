@@ -11,6 +11,6 @@ Também é um espaço de interação e compatilhamento de conhecimento entre os 
 3. Discussions: Nessa aba é focado para interação dos participantes, seja dúvidas em disciplinas, anúncios, amostras para mostrar sua evolução, Perguntas e Respostas ou ideias
 
 ## Como contribuir
-Leia nosso [guia de contribuição](https://github.com/PedroEduardoSS/GranSegurancaInformacao?tab=contributing-ov-file) e taambém nosso [código de conduta](https://github.com/PedroEduardoSS/GranSegurancaInformacao?tab=coc-ov-file)
+Leia nosso [guia de contribuição](https://github.com/PedroEduardoSS/GranSegurancaInformacao?tab=contributing-ov-file) e também nosso [código de conduta](https://github.com/PedroEduardoSS/GranSegurancaInformacao?tab=coc-ov-file)
 
 OBS: Esse repositório é de autoria dos graduandos e não da instituição Gran Faculdade
