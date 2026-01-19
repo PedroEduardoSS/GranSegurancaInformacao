@@ -14,9 +14,9 @@
 
 - Explique o _porquê_ das mudanças. Que problema isso resolve?
 
-## 3\. Problemas/Tickets Relacionados
+## 3\. Problemas/Issues Relacionados
 
-- Liste quaisquer problemas ou tickets relacionados.
+- Liste quaisquer problemas ou issues relacionados.
 
 - Use palavras-chave como Closes, Fixes ou Resolves para fechá-los automaticamente ao mesclar.
 
