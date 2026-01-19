@@ -1,0 +1,59 @@
+name: 🐛 Relatório de Bug
+description: Reporte comportamento inesperado ou erros
+title: "[BUG] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Antes de reportar, verifique se este bug já foi reportado em [issues](https://github.com/PedroEduardoSS/GranSegurancaInformacao/issues?q=is%3Aissue%20state%3Aopen%20label%3Abug).
+  - type: input
+    id: title
+    attributes:
+      label: Resumo
+      description: "Ex: 'Crash ao clicar no botão X'"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Descrição do Bug
+      description: "O que aconteceu? Quando isto ocorre?"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Passos para Reproduzir
+      placeholder: |
+        1. Vá para página X
+        2. Clique em Y
+        3. Veja erro Z
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportamento Esperado
+      description: "O que deveria acontecer?"
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Ambiente
+      options:
+        - Windows
+        - macOS
+        - Linux
+        - Outro (especifique abaixo)
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Versão do Projeto/Sistema
+      placeholder: "Ex: v1.2.0"
+  - type: textarea
+    id: additional
+    attributes:
+      label: Contexto Adicional
+      placeholder: "Logs, screenshots, etc."

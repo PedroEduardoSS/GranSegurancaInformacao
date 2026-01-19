@@ -1,0 +1,42 @@
+name: 🚀 Solicitação de Funcionalidade
+description: Sugira uma ideia para este projeto
+title: "[FUNCIONALIDADE] "
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Antes de sugerir, verifique se esta funcionalidade já foi solicitada em [issues](https://github.com/PedroEduardoSS/GranSegurancaInformacao/issues?q=is%3Aissue%20state%3Aopen%20label%3Aenhancement).
+  - type: textarea
+    id: problem
+    attributes:
+      label: Sua solicitação está relacionada a um problema?
+      description: Uma descrição clara e concisa do que é o problema.
+      placeholder: "Ex. Sempre fico frustrado quando [...]"
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Descreva a solução desejada
+      description: Uma descrição clara e concisa do que você quer que aconteça.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Descreva alternativas que você considerou
+      description: Uma descrição clara e concisa de quaisquer soluções alternativas ou funcionalidades que você considerou.
+  - type: textarea
+    id: context
+    attributes:
+      label: Contexto adicional
+      description: Adicione qualquer outro contexto ou screenshots sobre a solicitação de funcionalidade aqui.
+      render: markdown # Allows users to add markdown/images
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: Pesquisei por solicitações de funcionalidade similares
+        - label: Verifiquei a documentação

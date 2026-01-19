@@ -1,0 +1,24 @@
+name: 📖 Melhoria na Documentação
+description: Reporte erros ou sugira atualizações na documentação
+title: "[DOCS] "
+labels: [documentation]
+body:
+  - type: input
+    id: location
+    attributes:
+      label: Onde Melhorar?
+      placeholder: "Ex: README.md#installation"
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Conteúdo Atual
+      description: "Cole o texto atual (se aplicável)."
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Mudança Sugerida
+      description: "Como deveria ser reescrito?"
+    validations:
+      required: true

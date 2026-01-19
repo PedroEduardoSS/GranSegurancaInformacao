@@ -1,0 +1,47 @@
+name: ❓ Pergunta
+description: Peça ajuda ou esclarecimentos
+title: "[PERGUNTA] "
+labels: [question]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Antes de perguntar, por favor:
+        - Pesquise em [issues existentes](https://github.com/PedroEduardoSS/GranSegurancaInformacao/issues?q=is%3Aissue%20state%3Aopen%20label%3Aquestion)
+  - type: textarea
+    id: question
+    attributes:
+      label: Sua Pergunta
+      description: Seja específico (evite "Como X funciona?")
+      placeholder: "Ex: Como faço para configurar X funcionar com Y?"
+    validations:
+      required: true
+  - type: textarea
+    id: tried
+    attributes:
+      label: O Que Você Tentou
+      description: Liste os passos que tomou para resolver isto
+      placeholder: |
+        1. Verifiquei os docs em...
+        2. Tentei...
+  - type: textarea
+    id: references
+    attributes:
+      label: Referências Relevantes
+      description: Links para docs, Stack Overflow ou issues relacionadas
+      placeholder: "https://..."
+  - type: dropdown
+    id: urgency
+    attributes:
+      label: Nível de Urgência
+      options:
+        - "Apenas curioso"
+        - "Bloqueado mas existe contorno"
+        - "Bloqueador completo (não posso prosseguir)"
+  - type: checkboxes
+    id: verification
+    attributes:
+      label: Verificação
+      options:
+        - label: Pesquisei por perguntas similares
+        - label: Isto não está coberto na documentação
