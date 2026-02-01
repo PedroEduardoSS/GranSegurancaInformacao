@@ -1,0 +1,22 @@
+services:
+  kali-osint:
+    build: .
+    container_name: kali-osint
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./investigacoes:/root/osint
+    networks:
+      - osint-net
+
+  spiderfoot:
+    image: smicallef/spiderfoot:latest
+    container_name: spiderfoot
+    ports:
+      - "5001:5001"
+    networks:
+      - osint-net
+
+networks:
+  osint-net:
+    driver: bridge
