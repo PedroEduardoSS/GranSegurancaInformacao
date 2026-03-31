@@ -12,6 +12,9 @@ Também é um espaço de interação e compatilhamento de conhecimento entre os 
 2. Issues: Voltado para reportar bugs ou sugestões para melhoria para o repositório ou projeto.
 3. Discussions: Nessa aba é focado para interação dos participantes, seja dúvidas em disciplinas, anúncios, amostras para mostrar sua evolução, Perguntas e Respostas ou ideias
 
+## Disciplinas
+Aqui está um guia do conteúdo das disciplinas com dicas para aprofundar sobre os assusntos abordados.
+
 ## Como contribuir
 Leia nosso [guia de contribuição](https://github.com/PedroEduardoSS/GranSegurancaInformacao?tab=contributing-ov-file) e também nosso [código de conduta](https://github.com/PedroEduardoSS/GranSegurancaInformacao?tab=coc-ov-file)
 
